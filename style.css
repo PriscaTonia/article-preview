@@ -15,10 +15,11 @@ main{
     grid-template-rows: 1fr 2fr;
     max-width: 90%;
     margin: 70px auto;
-    min-height: 70vh;
+    min-height: 80vh;
     border-radius: 8px;
     background-color: white;
 }
+/* Main Image */
 .img-cont{
     background-image: url(./images/drawers.jpg);
     background-repeat: no-repeat;
@@ -26,6 +27,8 @@ main{
     background-size: cover;
     border-radius: 8px 8px 0px 0px;
 }
+
+/* main content */
 .content{
     display: flex;
     flex-direction: column;
@@ -34,41 +37,81 @@ main{
 }
 .content h4{
     color:  hsl(217, 19%, 35%);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
     font-weight: 700;
 }
-.profile-container{
+.content p{
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    color:  hsl(214, 17%, 51%)
+}
+
+/* Profile container and Icons container */
+.profile-container, .icons-container{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    place-items: center;
-    
+    place-items: center;   
 }
+.icons-container{
+    background-color: hsl(217, 19%, 35%); 
+    padding: 10px;
+    border-radius: 0px 0px 8px 8px;
+    color: white;
+}
+
+/* content - Profile */
 .profile{
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
+
 .profile img{
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
     margin-right: 10px;
 }
-.icon{
+.profile p span{
+    color:  hsl(217, 19%, 35%);
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+}
+.profile p{
+    color: hsl(212, 23%, 69%);
+
+}
+
+/* share icon */
+.icon, .icon-after{
     place-self: end;
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    background-color: hsl(210, 46%, 95%);
     width: 30px;
     height: 30px;
     border-radius: 50%;
     border: none;
     outline: none;
-}
-.icon::after{
-    background-color: hsl(212, 23%, 69%);
     cursor: pointer;
 }
-.profile img{
-    width: 20%;
-    height: auto;
-    border-radius: 50%;
+.icon svg, .icon-after svg{
+    pointer-events: none;
 }
+
+/* profile social icons */
+.profile-icons{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    min-width: 100%;
+}
+.icon-after{
+    background-color:  hsl(214, 17%, 51%);
+    color: white;
+    
+}
+
