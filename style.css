@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Mobile designs */
+body{
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+}
+
+main{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    max-width: 90%;
+    margin: 70px auto;
+    min-height: 70vh;
+    border-radius: 8px;
+    background-color: white;
+}
+.img-cont{
+    background-image: url(./images/drawers.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px 8px 0px 0px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px 30px 0px 30px;
+}
+.content h4{
+    color:  hsl(217, 19%, 35%);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.profile-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+    
+}
+.profile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.profile img{
+    margin-right: 10px;
+}
+.icon{
+    place-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+.icon::after{
+    background-color: hsl(212, 23%, 69%);
+    cursor: pointer;
+}
+.profile img{
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+}
