@@ -13,7 +13,7 @@ body{
 main{
     display:flex;
     flex-direction: column;
-    max-width: 90%;
+    max-width: 85%;
     margin: 50px auto;
     min-height: 60vh;
     border-radius: 8px;
@@ -21,7 +21,7 @@ main{
 }
 /* Main Image */
 .img-cont{
-    min-height: 20vh;
+    min-height: 23vh;
     background-image: url(./images/drawers.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -31,20 +31,20 @@ main{
 
 /* main content */
 .content{
-    min-height: 35vh;
+    min-height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 0px 30px 0px 30px;
+    padding: 0px 20px 0px 25px;
 }
 .content h4{
     color:  hsl(217, 19%, 35%);
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     line-height: 1.5rem;
     font-weight: 700;
 }
 .content p{
-    font-size: 0.88rem;
+    font-size: 0.87rem;
     line-height: 1.3rem;
     color:  hsl(214, 17%, 51%)
 }
@@ -54,11 +54,12 @@ main{
     display: grid;
     grid-template-columns: 2fr 1fr;
     place-items: center;   
-    padding: 10px 30px 15px 30px;
+    place-content:center ;
+    min-height: 8vh;
+   padding: 10px;
 }
 .icons-container{
     background-color: hsl(217, 19%, 35%); 
-    padding: 10px 30px 15px 20px;
     border-radius: 0px 0px 8px 8px;
     color: white;
     display: none;
@@ -67,7 +68,7 @@ main{
 /* content - Profile */
 .profile{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -91,6 +92,7 @@ main{
 /* share icon */
 .icon, .icon-after{
     place-self: end;
+    align-self: center;
     display: flex;
     justify-content: center;
     align-items: center;
